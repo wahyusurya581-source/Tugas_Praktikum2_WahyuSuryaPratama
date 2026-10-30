@@ -77,11 +77,12 @@
             }
             .cod {
                 width: fit-content;
+                margin: auto;
                 & p {
                     padding: 15px;
                     background-color: aquamarine;
                     border: 1px dotted red;
-                    text-align: center;
+                    text-align:center;
                     color: blue;
                 }
             }
@@ -89,6 +90,25 @@
                 background-color: rgb(213 213 23);
                 color: red;
                 border-color: #eee;
+                display: block;
+                margin: auto;
+            }
+        
+            table.harga {
+                border-collapse: collapse;  
+                width: 100%;                
+                margin: 20px 0;             
+            }
+            table.harga th {
+                background-color: #2db3d1; 
+                color: white;
+                padding: 8px;
+                text-align: left;
+            }
+            table.harga td {
+            padding: 8px;
+            background-color: #d6eef5;  
+            border-bottom: 2px solid white; 
             }
         </style>
     </head>
@@ -139,14 +159,11 @@ Daerah penghasil alpukat adalah Jawa Barat,Jawa Timur, sebagian Sumatera, Sulawe
             </ol>
             </div>
         </p>
-
-
         <div class="foto">
-
-<img src="images/alpukat_miki.png" alt="alpukat miki"/>
-<img src="images/alpukat_mentega.png" alt="alpukat mentega"/>
-<img src="images/alpukat_kendil.png" alt="alpukat kendil"/>
-<img src="images/alpukat_aligator.png" alt="alpukat alpukat_aligator"/>
+            <img src="images/alpukat_miki.png" alt="alpukat miki"/>
+            <img src="images/alpukat_mentega.png" alt="alpukat mentega"/>
+            <img src="images/alpukat_kendil.png" alt="alpukat kendil"/>
+            <img src="images/alpukat_aligator.png" alt="alpukat alpukat_aligator"/>
 
         </div>
         <div class="promo">
@@ -165,9 +182,46 @@ Daerah penghasil alpukat adalah Jawa Barat,Jawa Timur, sebagian Sumatera, Sulawe
        </div>
        <br/>
        <div>
+            <table class="harga">
+            <tr>
+                <th>No</th>
+                <th>Jenis Alpukat</th>
+                <th>Harga 1 Kg</th>
+                <th>Harga 2Kg</th>
+                <th>Harga 3Kg</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alpukat Mentega</td>
+                <td>Rp. 35.000, -</td>
+                <td>Rp. 65.000, -</td>
+                <td>Rp. 90.000, -</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Alpukat Miki</td>
+                <td>Rp. 50.000, -</td>
+                <td>Rp. 90.000, -</td>
+                <td>Rp. 135.000, -</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Alpukat Aligator</td>
+                <td>Rp. 30.000, -</td>
+                <td>Rp. 55.000, -</td>
+                <td>Rp. 80.000, -</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Alpukat Kendil</td>
+                <td>Rp. 40.000, -</td>
+                <td>Rp. 75.000, -</td>
+                <td>Rp. 100.000, -</td>
+            </tr>
+            </table>
+            </div>
+       <div>
             <button id="tombol">PESAN SEKARANG</button>
        </div>
-     
-      
     </body>
 </html>
