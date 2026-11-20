@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.foto {
+  flex: 1;
+  height: 150px;
+  border: 4px solid #222;
+  border-radius: 8px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
