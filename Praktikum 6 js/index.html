@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6</title>
+</head>
+<body>
+    <h1>ini belajar js</h1>
+
+    <script>
+        // code js
+
+        const name = "wahyu";
+        let umur = 18;
+        let nilai = 100;
+        let aktif = true;
+
+        console.log("nama", name);
+        console.log("umur", umur);
+        console.log("nilai", nilai);
+        console.log("status", aktif);
+        console.log("type nilai", typeof nilai);
+
+        const tugas = 90;
+        const uts = 92;
+        const uas = 98;
+        const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+
+        console.log("Nilai Akhir", akhir);
+        console.log("lulus:", akhir >= 60);
+
+        // percabangan if else
+        const nilai2 = 89;
+        let kategori;
+
+        if (nilai2 >=85) {
+            kategori = "A";
+        } else if (nilai2 >= 70) {
+            kategori = "B"
+        } else if (nilai2 >= 60) {
+            kategori = "C"
+        } else {
+            kategori = "D"
+        }
+
+        console.log("nilai", nilai2);
+        console.log("kategori", kategori);
+
+        // Perulangan dan fungsi dasar
+        function hitungDiskon(harga, persen) {
+            return harga - (harga * persen / 100);
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            const harga = i * 10000;
+            const bayar = hitungDiskon(harga, 10);
+            console.log("barang", i, "Harga:", harga, "Bayar:", bayar)
+        }
+
+    </script>
+</body>
+</html>

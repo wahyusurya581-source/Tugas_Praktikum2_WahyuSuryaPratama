@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>form sembako</h2>
+    <input id="nama" type="text" placeholder="ketik nama anda">
+    <p id="pesan">silahkan isi nama</p>
+
+    <script>
+        const inputNama = document.querySelector("#nama");
+        const pesan = document.querySelector("#pesan");
+
+        function tampilkanPesan() {
+            const nama = inputNama.value.trim();
+            pesan.textContent = nama === "" ?
+            'silahkan isi nama' : 'selamat anda mendapatkan sembako atas nama:'
+            + nama + "!"
+        }
+        inputNama.addEventListener("input", tampilkanPesan);
+    </script>
+</body>
+</html>

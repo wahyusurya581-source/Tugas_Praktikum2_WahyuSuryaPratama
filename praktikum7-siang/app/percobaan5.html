@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>daftar klasemen mu</h2>
+    <input id="nama" placeholder="nama club">
+    <button id="tambah">
+        tambah
+    </button>
+    <ul id="daftar"></ul>
+
+    <script>
+        const input = document.getElementById("nama");
+        const daftar = document.getElementById("daftar");
+
+        function tambahClub() {
+            const nama = input.value.trim();
+
+            if (nama === "") {
+                alert("club wajib di isi!")
+                return
+            }
+            const item = document.createElement("li")
+            item.appendChild(document.createTextNode(nama + " "));
+
+            const tombolHapus = document.createElement("button");
+            tombolHapus.textContent = "hapus";
+            tombolHapus.addEventListener("click", () => item.remove());
+        item.appendChild(tombolHapus);
+
+            daftar.appendChild(item)
+            input.value = "";
+            input.focus();
+        }
+        document.getElementById("tambah")
+        .addEventListener("click", tambahClub);
+    </script>
+</body>
+</html>

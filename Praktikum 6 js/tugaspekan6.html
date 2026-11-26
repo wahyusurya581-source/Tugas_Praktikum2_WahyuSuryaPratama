@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengolahan Nilai Mahasiswa</title>
+</head>
+<body>
+    <h2>Tugas Praktikum Mandiri Pekan 6 (Pengolahan Nilai)</h2>
+    <script>
+        const nama = "Wahyu Surya Pratama";
+        const nim = "0110226058"; 
+        const nilaiTugas = 94;              
+        const nilaiUTS = 89;                
+        const nilaiUAS = 92;                
+
+        const nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
+
+        let status; 
+        if (nilaiAkhir >= 60) {
+            status = "LULUS";        
+        } else {
+            status = "TIDAK LULUS";  
+        }
+
+        console.log("Nama Mahasiswa :", nama);
+        console.log("NIM            :", nim);
+        console.log("Nilai Akhir    :", nilaiAkhir);
+        console.log("Status         :", status);
+    </script>
+</body>
+</html>
